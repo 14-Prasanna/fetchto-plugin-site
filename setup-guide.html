@@ -1,0 +1,279 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Setup Guide | Fetchto WooCommerce Plugin</title>
+    <link href="https://cdn.jsdelivr.net/npm/bootstrap@5.3.3/dist/css/bootstrap.min.css" rel="stylesheet" integrity="sha384-QWTKZyjpPEjISv5WaRU9OFeRpok6YctnYmDr5pNlyT2bRjXh0JMhjY6hW+ALEwIH" crossorigin="anonymous">
+    <link rel="stylesheet" href="css/custom.css">
+    <link rel="icon" type="image/x-icon" href="images/logo.png">
+</head>
+<body>
+    <!-- Header -->
+<nav class="navbar navbar-expand-lg navbar-light bg-light fixed-top">
+    <div class="container">
+        <a class="navbar-brand" href="index.html">
+            <img src="images/logo.png" alt="Fetchto Logo" height="40">
+            Bigbox Enterprise
+        </a>
+        <button class="navbar-toggler" type="button" data-bs-toggle="collapse" data-bs-target="#navbarNav" aria-controls="navbarNav" aria-expanded="false" aria-label="Toggle navigation">
+            <span class="navbar-toggler-icon"></span>
+        </button>
+        <div class="collapse navbar-collapse" id="navbarNav">
+            <ul class="navbar-nav ms-auto">
+                <li class="nav-item">
+                    <a class="nav-link" href="index.html">Home</a>
+                </li>
+                <li class="nav-item">
+                    <a class="nav-link" href="docs.html">Documentation</a>
+                </li>
+                <li class="nav-item">
+                    <a class="nav-link" href="setup-guide.html">Setup Guide</a>
+                </li>
+                <li class="nav-item">
+                    <a class="nav-link" href="license.html">License</a>
+                </li>
+                <li class="nav-item">
+                    <a class="nav-link btn btn-primary text-white ms-3" href="download.html">Download</a>
+                </li>
+            </ul>
+        </div>
+    </div>
+</nav>
+
+    <!-- Main Content -->
+    <section class="container my-5">
+        <h1 class="mb-4">Fetchto WooCommerce Plugin Documentation</h1>
+        <p class="lead">Comprehensive guide to understanding and utilizing the Fetchto WooCommerce Integration Plugin by Bigbox Enterprise.</p>
+
+        <!-- Company Information -->
+        <div class="company-box mb-5">
+            <h2>About Bigbox Enterprise</h2>
+            <p><strong>Company Name:</strong> Bigbox Enterprise</p>
+            <p><strong>Brand Name:</strong> Fetchto</p>
+            <p><strong>Website:</strong> <a href="https://fetchto.com">https://fetchto.com</a></p>
+            <p><strong>Support Emails:</strong> <a href="mailto:fetchtoind@gmail.com">fetchtoind@gmail.com</a>, <a href="mailto:support@fetchto.com">support@fetchto.com</a></p>
+            <p>Bigbox Enterprise, under the Fetchto brand, is a leader in logistics solutions, empowering e-commerce businesses with innovative tools for seamless order management and delivery optimization.</p>
+        </div>
+
+        <div class="accordion" id="docsAccordion">
+            <div class="accordion-item">
+                <h2 class="accordion-header" id="headingOne">
+                    <button class="accordion-button" type="button" data-bs-toggle="collapse" data-bs-target="#collapseOne" aria-expanded="true" aria-controls="collapseOne">
+                        Installation
+                    </button>
+                </h2>
+                <div id="collapseOne" class="accordion-collapse collapse show" aria-labelledby="headingOne" data-bs-parent="#docsAccordion">
+                    <div class="accordion-body">
+                        <p>Install the plugin via WordPress Plugin Directory or manually by uploading the ZIP file.</p>
+
+                        <h4>Option 1: Install from WordPress Plugin Directory</h4>
+                        <ol>
+                            <li>In your WordPress Admin Panel, go to: Plugins → Add New</li>
+                            <li>Search for Fetchto WooCommerce Plugin.</li>
+                            <li>Click Install Now and then Activate.</li>
+                              <img src="images/step5_activate_plugin.png" alt="Activate Plugin" class="img-fluid mb-3">
+                            <li>Refresh your WordPress admin dashboard.</li>
+                             <img src="images/step6_settings_fetchto.png" alt="Settings Fetchto" class="img-fluid mb-3">
+                            <li>Navigate to Settings → Fetchto to configure credentials.</li>
+                            <img src="images/step7_test_order.png" alt="Test Order" class="img-fluid mb-3">
+                            <li>Enter Seller ID, HMAC, and Secret Key from your Fetchto Dashboard.</li>
+                            <img src="images/seller_credentials.png" alt="Seller Credentials" class="img-fluid mb-3">
+                            <li>Place a test order to verify integration.</li>
+                        </ol>
+
+                        <br>
+                        <br>
+
+
+                        <h4>Option 2: Manual Installation</h4>
+                        <p>Follow these steps for manual installation:</p>
+                        <table class="table table-striped">
+                            <thead>
+                                <tr>
+                                    <th>Step</th>
+                                    <th>Action</th>
+                                    <th>Screenshot</th>
+                                </tr>
+                            </thead>
+                            <tbody>
+                                <tr>
+                                    <td>1</td>
+                                    <td>Download the Fetchto WooCommerce Plugin package from our official website.</td>
+                                    <td><a href="/download.html" class="btn btn-primary">Download</a></td>
+                                </tr>
+                                <tr>
+                                    <td>2</td>
+                                    <td>In your WordPress Admin Panel, go to: Plugins → Add Plugin</td>
+                                    <td><img src="images/after_install.png" alt="After Install" class="img-fluid"></td>
+                                </tr>
+                                <tr>
+                                    <td>3</td>
+                                    <td>In your WordPress Admin Panel, go to: Plugins → Add Plugin → Upload Plugin</td>
+                                    <td><img src="images/manual_upload1.png" alt="After Install" class="img-fluid"></td>
+                                </tr>
+                                <tr>
+                                    <td>3</td>
+                                    <td>Upload the .zip file, click Install Now.</td>
+                                    <td><img src="images/manual_upload2.png" alt="Manual Upload" class="img-fluid"></td>
+                                </tr>
+                                <tr>
+                                    <td>4</td>
+                                    <td>After install go and check if the plugin is activated in the installed plugins page in wordpress.</td>
+                                    <td><img src="images/manual_upload3.png" alt="Manual Activate" class="img-fluid"></td>
+                                </tr>
+                                <tr>
+                                    <td>5</td>
+                                    <td>Refresh your WordPress admin dashboard. You can see this then continue below steps if you find any problem contact our team</td>
+                                    <td><img src="images/step7_test_order.png" alt="After Install" class="img-fluid"></td>
+                                </tr>
+                            </tbody>
+                        </table>
+                    </div>
+                </div>
+            </div>
+            <div class="accordion-item">
+                <h2 class="accordion-header" id="headingTwo">
+                    <button class="accordion-button collapsed" type="button" data-bs-toggle="collapse" data-bs-target="#collapseTwo" aria-expanded="false" aria-controls="collapseTwo">
+                        Configuration
+                    </button>
+                </h2>
+                <div id="collapseTwo" class="accordion-collapse collapse" aria-labelledby="headingTwo" data-bs-parent="#docsAccordion">
+                    <div class="accordion-body">
+                        <p>Configure Seller ID, HMAC, and Secret Key in the plugin settings under WordPress Admin.</p>
+                        <ol>
+                            <li>In your WordPress Admin Panel, go to: Settings → Fetchto</li>
+                            <img src="images/step6_settings_fetchto.png" alt="Go to Setting" class="img-fluid mb-3">
+                            <li>Enter the following credentials (from Fetchto Dashboard):
+                                <ul>
+                                    <li>Seller ID</li>
+                                    <li>HMAC</li>
+                                    <li>Secret Key</li>
+                                </ul>
+                            </li>
+                            <li>Click Save.</li>
+                            <li>Refresh the page to ensure credentials are saved successfully.</li>
+                        </ol>
+                        <img src="images/seller_credentials.png" alt="Seller Credentials" class="img-fluid mb-3">
+                    </div>
+                </div>
+            </div>
+            <div class="accordion-item">
+                <h2 class="accordion-header" id="headingThree">
+                    <button class="accordion-button collapsed" type="button" data-bs-toggle="collapse" data-bs-target="#collapseThree" aria-expanded="false" aria-controls="collapseThree">
+                        Setup WooCommerce Webhook
+                    </button>
+                </h2>
+                <div id="collapseThree" class="accordion-collapse collapse" aria-labelledby="headingThree" data-bs-parent="#docsAccordion">
+                    <div class="accordion-body">
+                        <ol>
+                            <li>Go to: WooCommerce → Settings → Advanced → Webhooks</li>
+                            <img src="images/go_to_setting.png" alt="Go to Setting" class="img-fluid mb-3">
+                            <li>Click Add Webhook and configure:
+                                <table class="table table-striped">
+                                    <thead>
+                                        <tr>
+                                            <th>Field</th>
+                                            <th>Value</th>
+                                        </tr>
+                                    </thead>
+                                    <tbody>
+                                        <tr><td>Name</td><td>Fetchto</td></tr>
+                                        <tr><td>Status</td><td>Active</td></tr>
+                                        <tr><td>Topic</td><td>Order Update</td></tr>
+                                        <tr><td>Delivery URL</td><td>http://localhost/wordpress/wp-json/fetchto/v1/update-awb (replace with live site URL)</td></tr>
+                                        <tr><td>Secret</td><td>(Leave Empty)</td></tr>
+                                        <tr><td>API Version</td><td>WP REST API v3</td></tr>
+                                    </tbody>
+                                </table>
+                            </li>
+                            <li>Click Save Webhook.</li>
+                        </ol>
+                        <img src="images/click_advanced.png" alt="Click Advanced" class="img-fluid mb-3">
+                        <img src="images/add_webhook.png" alt="Add Webhook" class="img-fluid mb-3">
+                    </div>
+                </div>
+            </div>
+            <div class="accordion-item">
+                <h2 class="accordion-header" id="headingFour">
+                    <button class="accordion-button collapsed" type="button" data-bs-toggle="collapse" data-bs-target="#collapseFour" aria-expanded="false" aria-controls="collapseFour">
+                        Verify Integration
+                    </button>
+                </h2>
+                <div id="collapseFour" class="accordion-collapse collapse" aria-labelledby="headingFour" data-bs-parent="#docsAccordion">
+                    <div class="accordion-body">
+                        <ul>
+                            <li>Refresh WooCommerce.</li>
+                            <li>Place a test order.</li>
+                            <li>The order should now sync automatically into your Fetchto Seller Panel for fulfillment.</li>
+                        </ul>
+                    </div>
+                </div>
+            </div>
+            <div class="accordion-item">
+                <h2 class="accordion-header" id="headingFive">
+                    <button class="accordion-button collapsed" type="button" data-bs-toggle="collapse" data-bs-target="#collapseFive" aria-expanded="false" aria-controls="collapseFive">
+                        Troubleshooting
+                    </button>
+                </h2>
+                <div id="collapseFive" class="accordion-collapse collapse" aria-labelledby="headingFive" data-bs-parent="#docsAccordion">
+                    <div class="accordion-body">
+                        <ul>
+                            <li>Orders not syncing? → Ensure Webhook is Active and Delivery URL is correct.</li>
+                            <li>Invalid Credentials? → Double-check Seller ID, HMAC, and Secret Key.</li>
+                            <li>No data in Fetchto? → Refresh Fetchto Dashboard after placing a WooCommerce order.</li>
+                        </ul>
+                    </div>
+                </div>
+            </div>
+            <div class="accordion-item">
+                <h2 class="accordion-header" id="headingSix">
+                    <button class="accordion-button collapsed" type="button" data-bs-toggle="collapse" data-bs-target="#collapseSix" aria-expanded="false" aria-controls="collapseSix">
+                        Security Notes
+                    </button>
+                </h2>
+                <div id="collapseSix" class="accordion-collapse collapse" aria-labelledby="headingSix" data-bs-parent="#docsAccordion">
+                    <div class="accordion-body">
+                        <ul>
+                            <li>Your Seller ID, HMAC, and Secret Key must remain confidential.</li>
+                            <li>Do NOT share credentials outside of the Fetchto WooCommerce Plugin.</li>
+                            <li>Do NOT add credentials to third-party applications or unauthorized platforms.</li>
+                        </ul>
+                    </div>
+                </div>
+            </div>
+        </div>
+
+        <!-- Software Installation Setup -->
+        <h2 class="mt-5">Software Installation Setup</h2>
+        <p class="lead">Detailed steps to set up the Fetchto WooCommerce Plugin on your system.</p>
+        <ol class="list-group list-group-numbered">
+            <li class="list-group-item">Ensure your system meets the prerequisites: WordPress 5.0+, PHP 7.4+, and an active WooCommerce store.</li>
+            <li class="list-group-item">Download the plugin ZIP from the <a href="download.html">Download</a> page.</li>
+            <li class="list-group-item">Follow the installation steps outlined in the 'Installation' section above.</li>
+            <li class="list-group-item">Configure your Fetchto Seller Credentials as described in the 'Configuration' section.</li>
+            <li class="list-group-item">Set up the WooCommerce Webhook according to the 'Setup WooCommerce Webhook' section.</li>
+            <li class="list-group-item">Verify the integration by placing a test order as per the 'Verify Integration' section.</li>
+        </ol>
+    </section>
+
+    <!-- Footer -->
+    <footer class="footer">
+        <div class="container">
+            <div class="row">
+                <div class="col-md-6">
+                    <p>&copy; 2025 Fetchto Enterprises. All rights reserved.</p>
+                    <p id="current-time"></p>
+                </div>
+                <div class="col-md-6 text-md-end">
+                    <a href="https://fetchto.com" class="text-white">Visit Website</a> | 
+                    <a href="mailto:support@fetchto.com" class="text-white">Contact Support</a>
+                </div>
+            </div>
+        </div>
+    </footer>
+
+    <script src="https://cdn.jsdelivr.net/npm/bootstrap@5.3.3/dist/js/bootstrap.bundle.min.js" integrity="sha384-YvpcrYf0tY3lHB60NNkmXc5s9fDVZLESaAA55NDzOxhy9GkcIdslK1eN7N6jIeHz" crossorigin="anonymous"></script>
+    <script src="js/custom.js"></script>
+</body>
+</html>
